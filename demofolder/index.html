@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="URls">
+        <a href="https://www.adobe.com/tw/acrobat.html" target="_blank" rel="noopener noreferrer">跳转pdf</a>
+        <br>
+    </p>
+</body>
+<script>
+    // 在这里读取
+    let arr = ['https://www.baidu.com/', 'https://www.eastmoney.com/', 'https://www.eastmoney.com/']
+    arr.forEach(item => { // forEach 为ES6语法 
+        var a = document.createElement(a);
+        a.innerHTML = `<a href="${item}" target="_blank" rel="noopener noreferrer">${item}</a><br />`
+        document.getElementById('URls').appendChild(a); // 插入ID为 URLs 标签下面
+    })
+</script>
+
+</html>
